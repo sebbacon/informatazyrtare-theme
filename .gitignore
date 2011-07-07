@@ -1,0 +1,15 @@
+/tmp
+/log
+/coverage
+/sqlitedbs
+/cache
+/old-cache
+.*.swp
+*~
+._*
+/db/test_structure.sql
+moo.txt
+*#*#
+TAGS
+/vendor/plugins/*theme
+/locale/model_attributes.rb
