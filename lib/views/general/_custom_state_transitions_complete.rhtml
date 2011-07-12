@@ -1,0 +1,5 @@
+        <div>
+            <%= radio_button "incoming_message", "described_state", "wrong_response", :id => 'wrong_response' + id_suffix %>
+            <label for="rejected<%=id_suffix%>"><%= _('Authority has replied but the response <strong>does not correspond to the request</strong>') %></label>
+        </div>
+
