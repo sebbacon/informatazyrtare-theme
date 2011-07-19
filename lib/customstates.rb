@@ -23,7 +23,7 @@ module InfoRequestCustomStates
             return 'deadline_extended' if
                 Time.now.strftime("%Y-%m-%d") < self.date_deadline_extended.strftime("%Y-%m-%d")
             return 'waiting_response_very_overdue'  if 
-                Time.now.strftime("%Y-%m-%d") > Holiday.due_date_from(self.date_deadline_extended, 15).strftime("%Y-%m-%d")
+                Time.now.strftime("%Y-%m-%d") > Holiday.due_date_from(self.date_deadline_extended, 8).strftime("%Y-%m-%d")
             return 'waiting_response_overdue'
         end
         return 'waiting_response_very_overdue' if
@@ -37,7 +37,7 @@ module InfoRequestCustomStates
         # XXX shouldn't this be 15 days after the date the status was
         # changed to "deadline extended"? Or perhaps 15 days ater the
         # initial request due date?
-        return Holiday.due_date_from(self.date_response_required_by, 15)
+        return Holiday.due_date_from(self.date_response_required_by, 8)
     end
 
     module ClassMethods 
