@@ -4,17 +4,6 @@ module InfoRequestCustomStates
         base.extend(ClassMethods)
     end
 
-    # Mixin methods for InfoRequest
-    def theme_display_status(status)
-        if status == 'deadline_extended'
-            _("Deadline extended.")
-        elsif status == 'wrong_response'
-            _("Wrong Response.")
-        else
-            raise _("unknown status ") + status        
-        end
-    end
-
     def theme_calculate_status
         return 'waiting_classification' if self.awaiting_description
         waiting_response = self.described_state == "waiting_response" || self.described_state == "deadline_extended"
@@ -34,13 +23,21 @@ module InfoRequestCustomStates
     end        
 
     def date_deadline_extended
-        # XXX shouldn't this be 15 days after the date the status was
-        # changed to "deadline extended"? Or perhaps 15 days ater the
-        # initial request due date?
         return Holiday.due_date_from(self.date_response_required_by, 8)
     end
 
+	# Mixin methods for InfoRequest
     module ClassMethods 
+		def theme_display_status(status)
+		    if status == 'deadline_extended'
+		        _("Deadline extended.")
+		    elsif status == 'wrong_response'
+		        _("Wrong Response.")
+		    else
+		        raise _("unknown status ") + status        
+		    end
+		end
+
         def theme_extra_states
             return ['deadline_extended',
                     'wrong_response']
