@@ -1,0 +1,6 @@
+#: /iz/alaveteli/vendor/plugins/informatazyrtare-theme/lib/views/general:3
+msgid "Authority has replied but the response <strong>does not correspond to the request</strong>"
+msgstr "Autoriteti ka kthyer pergjigje, por pergjigja <strong>nuk ka lidhje me ket kerkes</strong>"
+
+msgid "Authority has requested <strong>extension of the deadline.</strong>"
+msgstr "Autoriteti ka kërkuar <strong>zgjatjen e afatit</strong>"

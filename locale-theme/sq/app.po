@@ -1,0 +1,15 @@
+msgid "Authority has replied but the response <strong>does not correspond to the request</strong>"
+msgstr "Autoriteti publik është përgjigjur, por përgjigja <strong>nuk përputhet me kërkesën</strong>"
+
+msgid "Authority has requested <strong>extension of deadline.</strong>"
+msgstr "Autoriteti publik ka kërkuar <strong>zgjatjen e afatit për kthimin e përgjigjes</strong>"
+
+msgid ""
+"First, type in the <strong>name of the UK public authority</strong> you'd \n"
+"           <br>like information from. <strong>By law, they have to respond</strong>\n"
+"           (<a href=\"%s\">why?</a>)."
+msgstr ""
+"Se pari , type in the <strong>name of the public authority</strong> you'd \n"
+"           <br>like information from. <strong>By law, they have to respond</strong>\n"
+"           (<a href=\"%s\">why?</a>)."
+
