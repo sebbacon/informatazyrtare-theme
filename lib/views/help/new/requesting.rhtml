@@ -1,45 +1,40 @@
-<% @title = "Making requests" %>
+<% @title = "Si të bëj kërkesë" %>
 
 <%= render :partial => 'sidebar' %>
 <div id="left_column_flip">
 <h1 id="making_requests"><%= @title %> <a href="#making_requests"></a> </h1>
 <dl>
 
-<dt id="which_authority">I'm not sure which authority to make my request to, how can I find out? <a href="#which_authority"></a> </dt>
+<dt id="which_authority">Nuk jam i sigurt cilit autoritet duhet ti bëj kërkesë, si mund ta gjej autoritetin e duhur? <a href="#which_authority">#</a> </dt>
 
 <dd>
-<p>It can be hard to untangle government's complicated structured, and work out
-who knows the information that you want. Here are a few tips:
+<p>Shpeshherë është vështirë të kuptohen strukturat e komplikuara të qeverisë dhe të dihet cili autoritet i ka informatat që i kërkon.
+Ja disa këshilla:
 <ul>
-<li>Browse or search InformataZyrtare.org looking for similar requests to yours.</li>
-<li>When you've found an authority you think might have the information, use
-the "home page" link on the right hand side of their page to check what they do
-on their website.</li>
-<li>Contact the authority by phone or email to ask if they hold the kind of
-information you're after.</li>
-<li>Don't worry excessively about getting the right authority. If you get it
-wrong, they ought to advise you who to make the request to instead.
+<li>Shfleto ose kërko në InformataZyrtare.org duke shiquar kërkesa të ngjashme me tënden.</li>
+<li>Kur ta gjesh autoritetin për të cilin mendon se e ka informatën, përdore
+vegzën në anën e djathtë për të vizituar ueb faqen e tyre për tu informuar se me çfare mirren ata.</li>
+<li>Kontakto autoritetin me email ose me telefon për të pyetur se a e kanë llojin e informatave për të cilat ke interesim.</li>
+<li>Mos u merakos nëse nuk e gjen autoritetin përgjegjës me të paren. Nëse ke gabuar, ata duhet të të këshillojnë se kujt duhet drejtuar kërkesa.
 </li>
-<li>If you've got a thorny case, please <a href="/help/contact">contact us</a> for help.</li>
+<li>Nëse ke ndonjë rast kundërthënës, të lutem <a href="/help/contact">na kontakto</a> për ndihmë.</li>
 </ul>
 
 </dd>
 
 
 
-<dt id="missing_body">You're missing the public authority that I want to request from! <a href="#missing_body">#</a> </dt>
+<dt id="missing_body">Ju mungon autoriteti publik prej të cilit unë dëshiroj të kërkoj informata! <a href="#missing_body">#</a> </dt>
 
 <dd>
-<p>Please <a href="/help/contact">contact us</a> with the name of the public authority and,
-if you can find it, their contact email address for Freedom of Information requests.
+<p>Të lutem <a href="/help/contact">na kontakto</a> dhe na trego emrin e autoritetit publik që mungon. Nëse e gjen edhe adresën e emailit të tyre ku mund të adresohen kërkesat për informata zyrtare, të lutem na e dërgo.
 </p>
-<p>If you'd like to help add a whole category of public authority to the site, we'd love
-to hear from you too.
+<p>Gjithashtu mund të ndihmosh duke propozuar për të shtuar kategori të tërë me autoritete publike në InformataZyrtare.org, të mirëpresim.
 </p>
 
 </dd>
 
-<dt id="focused">Why must I keep my request focused?<a href="#focused"></a> </dt>
+<dt id="focused">Pse duhet ta mbajë kërkesën të fokusuar?<a href="#focused">#</a> </dt>
 
 <dd>
 
@@ -61,19 +56,36 @@ make it easier for authorities to be clear what information you are
 requesting, which means you will get a reply more quickly.
 </p>
 
+<p>
+If you want information to support an argument or campaign, Freedom of
+Information is a powerful tool. Although you may not use this site to
+run your campaign, we encourage you to use it to get the information you
+need. We also encourage to run your campaign elsewhere - one effective
+and very easy way is to <%= link_to 'start your own blog',
+"http://wordpress.com/"%>. You are welcome to link to your campaign
+from this site in an annotation to your request (you can make
+annotations after submitting the request).
+</p>
+
 </dd>
 
-<dt id="fees">Does it cost me anything to make a request?<a href="#fees"></a> </dt>
+<dt id="fees">A kushton (para) bërja e kërkesës?<a href="#fees"></a> </dt>
 
 <dd>
 
-<p>Making an FOI request is  always free.</p>
+<p>Making an FOI request is nearly always free.</p>
+
+<p>Authorities often include unnecessary, scary, boilerplate in
+acknowledgement messages saying they "may" charge a fee. Ignore such notices.
+They hardly ever will actually charge a fee.  If they do, they can only charge you if
+you have specifically agreed in advance to pay.
+</p>
 
 </dd>
 
 
 
-<dt id="quickly_response">How quickly will I get a response? <a href="#quickly_response">#</a> </dt>
+<dt id="quickly_response">Për sa kohë do të më marr përgjigje? <a href="#quickly_response">#</a> </dt>
 
 <dd>
 <p>By law, public authorities must respond <strong>promptly</strong> to
@@ -90,15 +102,15 @@ are breaking the law.</p>
 
 </dd>
 
-<dt id="deadline_extended">Deadline extended <a href="#deadline_extended">#</a> </dt>
+<dt id="deadline_extended">Zgjatja e afatit <a href="#deadline_extended">#</a> </dt>
 
 <dd>
-<p>By law, public authorities must needs <strong>more time</strong> for request ... (TO DO)
+<p>By law, public authorities... <strong></strong>
 </p>
 
 
 </dd>
-<dt id="no_response">What if I never get a response?<a href="#no_response">#</a> </dt>
+<dt id="no_response">Çka nëse kurrë nuk marr përgjigje?<a href="#no_response">#</a> </dt>
 
 <dd>
 <p>There are several things you can do if you never get a response.</p>
@@ -118,18 +130,18 @@ are breaking the law.</p>
 </ul>
 </dd>
 
-<dt id="not_satifised">What if I'm not satisfied with the response? <a href="#not_satifised">#</a> </dt>
+<dt id="not_satifised">Çka nëse nuk jam i kënaqur me përgjigjen? <a href="#not_satifised">#</a> </dt>
 <dd>If you didn't get the information you asked for, or you didn't get it in time,
 then read our page '<a href="/help/unhappy">Unhappy about the response you got?</a>'.
 </dd>
 
-<dt id="private_requests">I'd like to keep my request secret! (At least until I publish my story) <a href="#private_requests">#</a> </dt>
+<dt id="private_requests">Dëshiroj që kërkesa ime të mbetet e fshehur! (Së paku deri sa të publikoj artikullin tim) <a href="#private_requests">#</a> </dt>
 
 <dd><p>InformataZyrtare.org is currently only designed for public requests. All
 responses that we receive are automatically published on the website for anyone
 to read.  </p>
 
-<dt id="multiple">Can I make the same to request to lots of authorities, e.g. all councils? <a href="#multiple">#</a> </dt>
+<dt id="multiple">A mund ta dërgoj kërkesen e njejt tek disa autoritete, p.sh. tek të gjitha kuvendet komunale? <a href="#multiple">#</a> </dt>
 
 <dd>We ask you to first send a test version of your request to a few
 authorities. Their responses will help you improve the wording of your request,

@@ -7,10 +7,10 @@
 <h2> Introduction </h2>
 
 <p>This page explains how programmers can make other websites and software
-interact with InformataZyrtare via an "API".
+interact with WhatDoTheyKnow via an "API".
 </p>
 
-<p>InformataZyrtare does not have a full API yet, but we are gradually adding
+<p>WhatDoTheyKnow does not have a full API yet, but we are gradually adding
 lots of things that are similar in use to an API as they are requested.
 </p>
 
@@ -19,7 +19,7 @@ lots of things that are similar in use to an API as they are requested.
 <h2> 1. Linking to new requests </h2>
 
 <p>To encourage your users to make links to a particular public authority, use URLs of the form
-<%= link_to new_request_to_body_url(:url_name => "komuna_e_prizrenit") , new_request_to_body_url(:url_name => "komuna_e_prizrenit") %>. 
+<%= link_to new_request_to_body_url(:url_name => "liverpool_city_council") , new_request_to_body_url(:url_name => "liverpool_city_council") %>. 
 These are the parameters you can add to those URLs, either in the URL or from a form.
 
 <ul>
@@ -68,7 +68,7 @@ information about the list of events in the feed.
 <h2> 4. Spreadsheet of all authorities </h2>
 
 <p>
-A spreadsheet file listing every body in InformataZyrtare is available:
+A spreadsheet file listing every body in WhatDoTheyKnow is available:
 <%= link_to "all-authorities.csv", all_public_bodies_csv_url() %>
 </p>
 
