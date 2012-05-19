@@ -1,4 +1,4 @@
-<% @title = "Unhappy about a Freedom of Information request?" %>
+<% @title = "I pakënaqur me kërkesën tënde për informata zyrtare?" %>
 
 
 <% if !@info_request.nil? %>
@@ -6,105 +6,47 @@
 to your request '<%=request_link(@info_request) %>'?
 </h1>
 <% else %>
-<h1>Unhappy about the response you got?</h1>
+<h1>I/E pakënaqur me përgjigjen që ke marrë?</h1>
 <% end %>
 
-<p>If ...</p>
+<p>Nëse ...</p>
 
 <ul>
-<li>You didn't get a reply within 20 working days</li>
-<li>You did not get all of the information that you requested <strong>or</strong></li>
-<li>Your request was refused, but without a reason valid under the law</li>
+<li>Ti nuk ke marrë përgjigje brenda 7 ditë pune</li>
+<li>Ti nuk i ke marrë të gjitha informatat që i ke kërkuar <strong>ose</strong></li>
+<li>Kërkesa yte është refuzuar, por pa ndonjë arsye të vlefshme</li>
 </ul>
 
-<p>... you can</p>
+<p>... ti mund të</p>
 
 <ol>
-<li>Ask for an <strong>internal review</strong> at the public authority.</li>
-<li>If that doesn't help, complain to the <strong>Information Commissioner</strong>.</li>
-<li>Either way, also <strong>use other means</strong> to answer your question.</li>
+<li>Kërkon <strong>rishqyrtim intern</strong> në autoritetin publik.</li>
+<li>Nëse as kjo nuk ndihmon, ankohu te <strong>Institucioni i Avokatit te Popullit të Republikës së Kosovës</strong>.</li>
+<li>Nëse ankesa e parashtruar te Institucioni i Avokatit te Popullit nuk është e suksesshme, ti mund ta fillosh proceduren e padisë ne gjykatën kompetente.</li>
 </ol>
 
-<h1 id="internal_review">1. Asking for an internal review <a class="hover_a" href="#internal_review">#</a> </h1>
+<h1 id="internal_review">1. Kërkesë për rishqyrtim intern <a class="hover_a" href="#internal_review">#</a> </h1>
 
 <p>
 <% if !@info_request.nil? %>
     Choose <%= link_to "request an internal review", show_response_no_followup_url(:id => @info_request.id, :incoming_message_id => nil) + "?internal_review=1#followup" %> and then write a message asking the authority to review your request.
 <% else %>
-    At the bottom of the relevant request page on WhatDoTheyKnow choose
-    "request an internal review". Then write a message asking for an internal
-    review of your request. You may want to include a link to the
-    request page, to make it clear which request you are talking about.
+    Në fund të faqes për kërkesë zyrtare në InformataZyrtare.org zgjedh "Kërkesë për rishqyrtim intern". Pastaj shkruaj një mesazh duke kërkuar një rishqyrtim intern të kërkesës tënde.
 <% end %>
 </p>
 
-<p>Internal reviews should be quick. If one takes longer than 20 working days
-then the authority should write and let you know, and it should never take
-longer than 40 working days (see this
-<a href="http://www.ico.gov.uk/upload/documents/library/freedom_of_information/detailed_specialist_guides/foi_good_practice_guidance_5.pdf">good
-practice guide</a>).
-You will then either get the information that
-you originally requested, or you will be told that the review upholds the
-original decision.
+<p>Kërkesat për Rishqyrte interne duhen të trajtohen shpejtë. Sipas ligjit, ato duhet të trajtohen brenda 7 ditë pune.
 </p>
 
 <h1 id="complaining">2. Complaining to the Information Commissioner <a class="hover_a" href="#complaining">#</a> </h1>
 
-<p>If you are still unhappy after the public authority has done their internal review,
-then you can complain to the Information Commissioner. To do this read
-<a href="http://www.ico.gov.uk/complaints/freedom_of_information.aspx">Complaints about Freedom of Information</a>
-on the Information Commissioner's website. If you requested information from a Scottish
-authority, then  <a href="http://www.itspublicknowledge.info/YourRights/HowToAppeal/Appeal.asp">appeal
-to the Scottish Information Commissioner</a>.
-</p>
+<p>Nëse je ende i/e pakënaqur pasi autoriteti publik e ka bërë shqyrtimin intern, atëherë ti munt të ankohesh ne Insitucionin e Ombudspersonit të Kosovës.</p>
 
-<p>To make it easier to send the relevant information to the 
-Information Commissioner, either
-<% if !@info_request.nil? %>
-    include a link to your request 
-    <strong><%=h main_url(request_url(@info_request)) %></strong>
-<% else %>
-    include a link to your request on WhatDoTheyKnow
-<% end %>
-in your complaint or print out the whole page of your request and all attachments.
-</p>
 
-<p>WhatDoTheyKnow has no special facilities for handling a request at this stage - it
-passes into the Information Commissioner's system. You can leave annotations on your
-request keeping people informed of progress.</p>
-
-<p>A warning. There is a backlog of work at the Information Commissioner, and
-it can take literally years to get resolution from them. If you reach this point,
-you should accept that you won't get the information quickly by this means. Maybe
-you want to help the fight to improve Freedom of Information, or maybe
-getting the information slowly is still worthwhile. You can also try and
-get the information by <strong>other means...</strong></p>
-
-<h1 id="other_means">3. Using other means to answer your question <a class="hover_a" href="#other_means">#</a> </h1>
+<h1 id="other_means">3. Nëse ankesa në Insitucionin e Ombudspersonit nuk ishe e suksesshme, ti mund të fillon procedurën e padisë ne gjykatën kompetente. <a class="hover_a" href="#other_means">#</a> </h1>
 
 <p>You can try persuing your problem or your research in other ways.
 
-<ul>
-<li>Make a <strong>new FOI request</strong> for summary information, or for
-documentation relating indirectly to matters in your refused request.  
-<a href="/help/contact">Ask us for ideas</a> if you're stuck.</li>
-<li>If any <strong>other public authorities</strong> or publicly owned companies are involved,
-then make FOI requests to them.</li>
-<li>Write to <strong>your MP</strong> or other politician using <a
-href="http://www.writetothem.com">WriteToThem</a> and ask for their help
-finding the answer. MPs can write directly to ministers or departments, and
-can ask written questions in the House of Commons. Councillors in local authorities
-can talk directly to council officers.</li>
-<li>Ask <strong>other researchers</strong> who are interested in a similar 
-issue to yours for ideas. You can sometimes find them by browsing this site;
-contact any registered user from their page. There may be an Internet
-forum or group that they hang out in. If it is a local matter, use <a
-href="http://www.groupsnearyou.com">GroupsNearYou</a> to find such a 
-forum.</li>
-<li><strong>Start a pledge</strong> on <a href="http://www.pledgebank.com">PledgeBank</a> to get 
-others to act together with you. For example, you could arrange a meeting with
-staff from the authority. Or you could form a small local campaigns group.
-</ul>
 
 
 

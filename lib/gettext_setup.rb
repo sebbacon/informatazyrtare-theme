@@ -9,3 +9,6 @@ Dispatcher.to_prepare do
     FastGettext.add_text_domain 'app', :type=>:chain, :chain=>repos
     FastGettext.default_text_domain = 'app'
 end
+
+
+

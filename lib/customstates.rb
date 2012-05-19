@@ -51,7 +51,7 @@ module RequestControllerCustomStates
         # called after the core describe_state code.  It should
         # end by raising an error if the status is unknown
         if info_request.calculate_status == 'deadline_extended'
-            flash[:notice] = _("Authority has requested extension of the deadline.")
+            flash[:notice] = _("Authority has requested deadline extension.")
             redirect_to unhappy_url(info_request)
         elsif info_request.calculate_status == 'wrong_response'
             flash[:notice] = _("Oh no! Sorry to hear that your request was wrong. Here is what to do now.")
